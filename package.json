@@ -1,0 +1,25 @@
+{
+  "name": "congenial-fortnight-tester",
+  "version": "0.0.1",
+  "description": "A test library to learn about library CI/CD",
+  "main": "lib/index.js",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "clean": "rm -rf lib && mkdir lib",
+    "build": "cp -R src lib",
+    "prepublishOnly": "yarn run clean && yarn run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnicolaeva/congenial-fortnight-tester.git"
+  },
+  "author": "@dnicolaeva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnicolaeva/congenial-fortnight-tester/issues"
+  },
+  "homepage": "https://github.com/dnicolaeva/congenial-fortnight-tester#readme"
+}
